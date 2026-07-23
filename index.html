@@ -170,6 +170,68 @@ header{
 
 }
 
+/* CONTADOR DE TREINOS */
+
+.workout-counter{
+
+    margin:35px auto 15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.counter-title{
+
+    color:#ffffff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.counter-number{
+
+    width:90px;
+
+    height:90px;
+
+    background:#e53935;
+
+    color:white;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:38px;
+
+    font-weight:bold;
+
+    box-shadow:0 8px 20px rgba(229,57,53,.35);
+
+    transition:.25s;
+
+}
+
+.counter-number:hover{
+
+    transform:scale(1.08);
+
+}
+
 /* CARDS DOS EXERCÍCIOS */
 
 .card{
@@ -276,7 +338,7 @@ onclick="mostrarPagina('treinoA')">
 
 <h3>Workout A</h3>
 
-<p>Chest • Shoulders • Triceps</p>
+<p>Peito • Ombro • Biceps</p>
 
 </div>
 
@@ -292,7 +354,7 @@ onclick="mostrarPagina('treinoB')">
 
 <h3>Workout B</h3>
 
-<p>Back • Biceps</p>
+<p>Costas • Triceps</p>
 
 </div>
 
@@ -308,7 +370,7 @@ onclick="mostrarPagina('treinoC')">
 
 <h3>Workout C</h3>
 
-<p>Legs</p>
+<p>Pernas</p>
 
 </div>
 
@@ -324,7 +386,7 @@ onclick="mostrarPagina('mes')">
 
 <h3>Monthly Calendar</h3>
 
-<p>Track your workouts</p>
+<p>Check Diário</p>
 
 </div>
 
@@ -347,14 +409,15 @@ onclick="mostrarPagina('mes')">
 
     <h2>💪 Workout A</h2>
 
-    <p>Chest • Shoulders • Triceps</p>
+    <p>Peito • Ombros • Bíceps</p>
 
     <br>
 
     <div class="card">
-        <strong>Bench Press</strong><br><br>
 
-        Weight (kg)<br>
+        <strong>Supino Reto</strong><br><br>
+
+        Carga (kg)<br>
 
         <input
             id="supinoReto"
@@ -364,9 +427,9 @@ onclick="mostrarPagina('mes')">
 
     <div class="card">
 
-        <strong>Incline Bench Press</strong><br><br>
+        <strong>Supino Inclinado</strong><br><br>
 
-        Weight (kg)<br>
+        Carga (kg)<br>
 
         <input
             id="supinoInclinado"
@@ -376,9 +439,9 @@ onclick="mostrarPagina('mes')">
 
     <div class="card">
 
-        <strong>Chest Fly</strong><br><br>
+        <strong>Crucifixo</strong><br><br>
 
-        Weight (kg)<br>
+        Carga (kg)<br>
 
         <input
             id="crucifixo"
@@ -388,12 +451,60 @@ onclick="mostrarPagina('mes')">
 
     <div class="card">
 
-        <strong>Shoulder Press</strong><br><br>
+        <strong>Desenvolvimento</strong><br><br>
 
-        Weight (kg)<br>
+        Carga (kg)<br>
 
         <input
             id="desenvolvimento"
+            placeholder="0">
+
+    </div>
+
+    <div class="card">
+
+        <strong>Rosca Direta</strong><br><br>
+
+        Carga (kg)<br>
+
+        <input
+            id="roscaDireta"
+            placeholder="0">
+
+    </div>
+
+    <div class="card">
+
+        <strong>Rosca Martelo</strong><br><br>
+
+        Carga (kg)<br>
+
+        <input
+            id="roscaMartelo"
+            placeholder="0">
+
+    </div>
+
+    <div class="card">
+
+        <strong>Rosca Cross</strong><br><br>
+
+        Carga (kg)<br>
+
+        <input
+            id="roscaCross"
+            placeholder="0">
+
+    </div>
+
+    <div class="card">
+
+        <strong>Rosca Scott</strong><br><br>
+
+        Carga (kg)<br>
+
+        <input
+            id="roscaScott"
             placeholder="0">
 
     </div>
@@ -413,39 +524,39 @@ onclick="mostrarPagina('mes')">
 
     <h2>🏋️ Workout B</h2>
 
-    <p>Back • Biceps</p>
+    <p>Costas • Tríceps</p>
 
     <br>
 
     <div class="card">
 
-        <strong>Lat Pulldown</strong><br><br>
+        <strong>Puxada Aberta</strong><br><br>
 
-        Weight (kg)<br>
+        Carga (kg)<br>
 
         <input
-            id="puxada"
+            id="puxadaAberta"
             placeholder="0">
 
     </div>
 
     <div class="card">
 
-        <strong>Barbell Row</strong><br><br>
+        <strong>Puxada Fechada</strong><br><br>
 
-        Weight (kg)<br>
+        Carga (kg)<br>
 
         <input
-            id="remada"
+            id="puxadaFechada"
             placeholder="0">
 
     </div>
 
     <div class="card">
 
-        <strong>Seated Cable Row</strong><br><br>
+        <strong>Remada Baixa</strong><br><br>
 
-        Weight (kg)<br>
+        Carga (kg)<br>
 
         <input
             id="remadaBaixa"
@@ -455,12 +566,84 @@ onclick="mostrarPagina('mes')">
 
     <div class="card">
 
-        <strong>Barbell Curl</strong><br><br>
+        <strong>Remada Curvada</strong><br><br>
 
-        Weight (kg)<br>
+        Carga (kg)<br>
 
         <input
-            id="roscaDireta"
+            id="remadaCurvada"
+            placeholder="0">
+
+    </div>
+
+    <div class="card">
+
+        <strong>Remada Serrote</strong><br><br>
+
+        Carga (kg)<br>
+
+        <input
+            id="remadaSerrote"
+            placeholder="0">
+
+    </div>
+
+    <div class="card">
+
+        <strong>Pulldown</strong><br><br>
+
+        Carga (kg)<br>
+
+        <input
+            id="pulldown"
+            placeholder="0">
+
+    </div>
+
+    <div class="card">
+
+        <strong>Elevação Lateral</strong><br><br>
+
+        Carga (kg)<br>
+
+        <input
+            id="elevacaoLateral"
+            placeholder="0">
+
+    </div>
+
+    <div class="card">
+
+        <strong>Tríceps Corda</strong><br><br>
+
+        Carga (kg)<br>
+
+        <input
+            id="tricepsCorda"
+            placeholder="0">
+
+    </div>
+
+    <div class="card">
+
+        <strong>Tríceps Testa</strong><br><br>
+
+        Carga (kg)<br>
+
+        <input
+            id="tricepsTesta"
+            placeholder="0">
+
+    </div>
+
+    <div class="card">
+
+        <strong>Tríceps Francês</strong><br><br>
+
+        Carga (kg)<br>
+
+        <input
+            id="tricepsFrances"
             placeholder="0">
 
     </div>
@@ -473,75 +656,68 @@ onclick="mostrarPagina('mes')">
 
 <div class="page" id="treinoC">
 
-    <button class="voltar"
-        onclick="mostrarPagina('home')">
+    <button class="voltar" onclick="mostrarPagina('home')">
         ⬅ Home
     </button>
 
     <h2>🦵 Workout C</h2>
 
-    <p>Legs</p>
+    <p>Pernas</p>
 
     <br>
 
     <div class="card">
-
-        <strong>Squat</strong><br><br>
-
-        Weight (kg)<br>
-
-        <input
-            id="agachamento"
-            placeholder="0">
-
-    </div>
-
-    <div class="card">
-
         <strong>Leg Press</strong><br><br>
-
-        Weight (kg)<br>
-
-        <input
-            id="legpress"
-            placeholder="0">
-
+        Carga (kg)<br>
+        <input id="legpress" placeholder="0">
     </div>
 
     <div class="card">
-
-        <strong>Leg Extension</strong><br><br>
-
-        Weight (kg)<br>
-
-        <input
-            id="extensora"
-            placeholder="0">
-
+        <strong>Agachamento Livre</strong><br><br>
+        Carga (kg)<br>
+        <input id="agachamentoLivre" placeholder="0">
     </div>
 
     <div class="card">
-
-        <strong>Leg Curl</strong><br><br>
-
-        Weight (kg)<br>
-
-        <input
-            id="flexora"
-            placeholder="0">
-
+        <strong>Agachamento Búlgaro</strong><br><br>
+        Carga (kg)<br>
+        <input id="agachamentoBulgaro" placeholder="0">
     </div>
 
     <div class="card">
+        <strong>Extensora</strong><br><br>
+        Carga (kg)<br>
+        <input id="extensora" placeholder="0">
+    </div>
 
-        <strong>Standing Calf Raise</strong><br><br>
+    <div class="card">
+        <strong>Flexora</strong><br><br>
+        Carga (kg)<br>
+        <input id="flexora" placeholder="0">
+    </div>
 
-        Weight (kg)<br>
+    <div class="card">
+        <strong>Abdutora</strong><br><br>
+        Carga (kg)<br>
+        <input id="abdutora" placeholder="0">
+    </div>
 
-        <input
-            id="panturrilha"
-            placeholder="0">
+    <div class="card">
+        <strong>Adutora</strong><br><br>
+        Carga (kg)<br>
+        <input id="adutora" placeholder="0">
+    </div>
 
+    <div class="card">
+        <strong>Elevação de Quadril</strong><br><br>
+        Carga (kg)<br>
+        <input id="elevacaoQuadril" placeholder="0">
+    </div>
+
+    <div class="card">
+        <strong>Stiff</strong><br><br>
+        Carga (kg)<br>
+        <input id="stiff" placeholder="0">
     </div>
 
 </div>
@@ -569,13 +745,17 @@ onclick="mostrarPagina('mes')">
 
         <br>
 
-        <h3>
+        <div class="workout-counter">
 
-            Total Workouts
+    <span class="counter-title">
+        Total Workouts
+    </span>
 
-            <span id="cnt">0</span>
+    <div class="counter-number" id="cnt">
+        0
+    </div>
 
-        </h3>
+</div>
 
     </div>
 
