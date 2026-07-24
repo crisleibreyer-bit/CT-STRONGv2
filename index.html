@@ -306,6 +306,62 @@ header{
 
 }
 
+/* SERIES E REPS */
+
+.exercise-row{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+.exercise-field{
+
+    flex:1;
+
+}
+
+.exercise-field label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.exercise-field input{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    background:#fff;
+
+    color:#111827;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px;
+
+    text-align:center;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+}
+
 </style>
 
 </head>
@@ -413,100 +469,196 @@ onclick="mostrarPagina('mes')">
 
     <br>
 
+    <!-- Supino Reto -->
     <div class="card">
+        <strong>Supino Reto</strong>
 
-        <strong>Supino Reto</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="supinoRetoCarga" placeholder="0">
+            </div>
 
-        <input
-            id="supinoReto"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="supinoRetoSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="supinoRetoReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Supino Inclinado -->
     <div class="card">
+        <strong>Supino Inclinado</strong>
 
-        <strong>Supino Inclinado</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="supinoInclinadoCarga" placeholder="0">
+            </div>
 
-        <input
-            id="supinoInclinado"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="supinoInclinadoSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="supinoInclinadoReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Crucifixo -->
     <div class="card">
+        <strong>Crucifixo</strong>
 
-        <strong>Crucifixo</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="crucifixoCarga" placeholder="0">
+            </div>
 
-        <input
-            id="crucifixo"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="crucifixoSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="crucifixoReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Desenvolvimento -->
     <div class="card">
+        <strong>Desenvolvimento</strong>
 
-        <strong>Desenvolvimento</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="desenvolvimentoCarga" placeholder="0">
+            </div>
 
-        <input
-            id="desenvolvimento"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="desenvolvimentoSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="desenvolvimentoReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Rosca Direta -->
     <div class="card">
+        <strong>Rosca Direta</strong>
 
-        <strong>Rosca Direta</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="roscaDiretaCarga" placeholder="0">
+            </div>
 
-        <input
-            id="roscaDireta"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="roscaDiretaSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="roscaDiretaReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Rosca Martelo -->
     <div class="card">
+        <strong>Rosca Martelo</strong>
 
-        <strong>Rosca Martelo</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="roscaMarteloCarga" placeholder="0">
+            </div>
 
-        <input
-            id="roscaMartelo"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="roscaMarteloSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="roscaMarteloReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Rosca Cross -->
     <div class="card">
+        <strong>Rosca Cross</strong>
 
-        <strong>Rosca Cross</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="roscaCrossCarga" placeholder="0">
+            </div>
 
-        <input
-            id="roscaCross"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="roscaCrossSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="roscaCrossReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Rosca Scott -->
     <div class="card">
+        <strong>Rosca Scott</strong>
 
-        <strong>Rosca Scott</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="roscaScottCarga" placeholder="0">
+            </div>
 
-        <input
-            id="roscaScott"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="roscaScottSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="roscaScottReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
 </div>
@@ -528,124 +680,244 @@ onclick="mostrarPagina('mes')">
 
     <br>
 
+    <!-- Puxada Aberta -->
     <div class="card">
+        <strong>Puxada Aberta</strong>
 
-        <strong>Puxada Aberta</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="puxadaAbertaCarga" placeholder="0">
+            </div>
 
-        <input
-            id="puxadaAberta"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="puxadaAbertaSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="puxadaAbertaReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Puxada Fechada -->
     <div class="card">
+        <strong>Puxada Fechada</strong>
 
-        <strong>Puxada Fechada</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="puxadaFechadaCarga" placeholder="0">
+            </div>
 
-        <input
-            id="puxadaFechada"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="puxadaFechadaSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="puxadaFechadaReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Remada Baixa -->
     <div class="card">
+        <strong>Remada Baixa</strong>
 
-        <strong>Remada Baixa</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="remadaBaixaCarga" placeholder="0">
+            </div>
 
-        <input
-            id="remadaBaixa"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="remadaBaixaSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="remadaBaixaReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Remada Curvada -->
     <div class="card">
+        <strong>Remada Curvada</strong>
 
-        <strong>Remada Curvada</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="remadaCurvadaCarga" placeholder="0">
+            </div>
 
-        <input
-            id="remadaCurvada"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="remadaCurvadaSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="remadaCurvadaReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Remada Serrote -->
     <div class="card">
+        <strong>Remada Serrote</strong>
 
-        <strong>Remada Serrote</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="remadaSerroteCarga" placeholder="0">
+            </div>
 
-        <input
-            id="remadaSerrote"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="remadaSerroteSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="remadaSerroteReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Pulldown -->
     <div class="card">
+        <strong>Pulldown</strong>
 
-        <strong>Pulldown</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="pulldownCarga" placeholder="0">
+            </div>
 
-        <input
-            id="pulldown"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="pulldownSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="pulldownReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Elevação Lateral -->
     <div class="card">
+        <strong>Elevação Lateral</strong>
 
-        <strong>Elevação Lateral</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="elevacaoLateralCarga" placeholder="0">
+            </div>
 
-        <input
-            id="elevacaoLateral"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="elevacaoLateralSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="elevacaoLateralReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Tríceps Corda -->
     <div class="card">
+        <strong>Tríceps Corda</strong>
 
-        <strong>Tríceps Corda</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="tricepsCordaCarga" placeholder="0">
+            </div>
 
-        <input
-            id="tricepsCorda"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="tricepsCordaSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="tricepsCordaReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Tríceps Testa -->
     <div class="card">
+        <strong>Tríceps Testa</strong>
 
-        <strong>Tríceps Testa</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="tricepsTestaCarga" placeholder="0">
+            </div>
 
-        <input
-            id="tricepsTesta"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="tricepsTestaSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="tricepsTestaReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Tríceps Francês -->
     <div class="card">
+        <strong>Tríceps Francês</strong>
 
-        <strong>Tríceps Francês</strong><br><br>
+        <div class="exercise-row">
 
-        Carga (kg)<br>
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="tricepsFrancesCarga" placeholder="0">
+            </div>
 
-        <input
-            id="tricepsFrances"
-            placeholder="0">
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="tricepsFrancesSeries" placeholder="3">
+            </div>
 
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="tricepsFrancesReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
 </div>
@@ -656,7 +928,8 @@ onclick="mostrarPagina('mes')">
 
 <div class="page" id="treinoC">
 
-    <button class="voltar" onclick="mostrarPagina('home')">
+    <button class="voltar"
+        onclick="mostrarPagina('home')">
         ⬅ Home
     </button>
 
@@ -666,58 +939,220 @@ onclick="mostrarPagina('mes')">
 
     <br>
 
+    <!-- Leg Press -->
     <div class="card">
-        <strong>Leg Press</strong><br><br>
-        Carga (kg)<br>
-        <input id="legpress" placeholder="0">
+        <strong>Leg Press</strong>
+
+        <div class="exercise-row">
+
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="legPressCarga" placeholder="0">
+            </div>
+
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="legPressSeries" placeholder="3">
+            </div>
+
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="legPressReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Agachamento Livre -->
     <div class="card">
-        <strong>Agachamento Livre</strong><br><br>
-        Carga (kg)<br>
-        <input id="agachamentoLivre" placeholder="0">
+        <strong>Agachamento Livre</strong>
+
+        <div class="exercise-row">
+
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="agachamentoLivreCarga" placeholder="0">
+            </div>
+
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="agachamentoLivreSeries" placeholder="3">
+            </div>
+
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="agachamentoLivreReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Agachamento Búlgaro -->
     <div class="card">
-        <strong>Agachamento Búlgaro</strong><br><br>
-        Carga (kg)<br>
-        <input id="agachamentoBulgaro" placeholder="0">
+        <strong>Agachamento Búlgaro</strong>
+
+        <div class="exercise-row">
+
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="agachamentoBulgaroCarga" placeholder="0">
+            </div>
+
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="agachamentoBulgaroSeries" placeholder="3">
+            </div>
+
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="agachamentoBulgaroReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Extensora -->
     <div class="card">
-        <strong>Extensora</strong><br><br>
-        Carga (kg)<br>
-        <input id="extensora" placeholder="0">
+        <strong>Extensora</strong>
+
+        <div class="exercise-row">
+
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="extensoraCarga" placeholder="0">
+            </div>
+
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="extensoraSeries" placeholder="3">
+            </div>
+
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="extensoraReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Flexora -->
     <div class="card">
-        <strong>Flexora</strong><br><br>
-        Carga (kg)<br>
-        <input id="flexora" placeholder="0">
+        <strong>Flexora</strong>
+
+        <div class="exercise-row">
+
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="flexoraCarga" placeholder="0">
+            </div>
+
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="flexoraSeries" placeholder="3">
+            </div>
+
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="flexoraReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Abdutora -->
     <div class="card">
-        <strong>Abdutora</strong><br><br>
-        Carga (kg)<br>
-        <input id="abdutora" placeholder="0">
+        <strong>Abdutora</strong>
+
+        <div class="exercise-row">
+
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="abdutoraCarga" placeholder="0">
+            </div>
+
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="abdutoraSeries" placeholder="3">
+            </div>
+
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="abdutoraReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Adutora -->
     <div class="card">
-        <strong>Adutora</strong><br><br>
-        Carga (kg)<br>
-        <input id="adutora" placeholder="0">
+        <strong>Adutora</strong>
+
+        <div class="exercise-row">
+
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="adutoraCarga" placeholder="0">
+            </div>
+
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="adutoraSeries" placeholder="3">
+            </div>
+
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="adutoraReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Elevação de Quadril -->
     <div class="card">
-        <strong>Elevação de Quadril</strong><br><br>
-        Carga (kg)<br>
-        <input id="elevacaoQuadril" placeholder="0">
+        <strong>Elevação de Quadril</strong>
+
+        <div class="exercise-row">
+
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="elevacaoQuadrilCarga" placeholder="0">
+            </div>
+
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="elevacaoQuadrilSeries" placeholder="3">
+            </div>
+
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="elevacaoQuadrilReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
+    <!-- Stiff -->
     <div class="card">
-        <strong>Stiff</strong><br><br>
-        Carga (kg)<br>
-        <input id="stiff" placeholder="0">
+        <strong>Stiff</strong>
+
+        <div class="exercise-row">
+
+            <div class="exercise-field">
+                <label>Carga</label>
+                <input id="stiffCarga" placeholder="0">
+            </div>
+
+            <div class="exercise-field">
+                <label>Séries</label>
+                <input id="stiffSeries" placeholder="3">
+            </div>
+
+            <div class="exercise-field">
+                <label>Reps</label>
+                <input id="stiffReps" placeholder="12">
+            </div>
+
+        </div>
     </div>
 
 </div>
